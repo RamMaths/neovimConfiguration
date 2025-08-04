@@ -13,6 +13,27 @@ return {
     end,
   },
 
+  {
+    "tpope/vim-fugitive",
+    lazy = false,
+  },
+
+  {
+    "greggh/claude-code.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    lazy = false,
+    config = function()
+      require("claude-code").setup({
+        window = {
+          split_ratio = 0.3,
+          position = "vertical",
+          enter_insert = true
+        },
+        command = "claude"
+      })
+    end,
+  },
+
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
