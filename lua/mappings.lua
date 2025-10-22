@@ -18,3 +18,8 @@ map("t", "<C-l>", "<C-\\><C-n><C-w>l")
 -- Claude Code mappings
 map("n", "<leader>cc", "<cmd>ClaudeCode<cr>", { desc = "Toggle Claude Code" })
 map("n", "<C-\\>", "<cmd>ClaudeCode<cr>", { desc = "Toggle Claude Code" })
+
+-- Markdown rendering
+map("n", "<leader>mr", "<cmd>RenderMarkdown toggle<cr>", { desc = "Toggle Markdown Rendering" })
+map("n", "<leader>me", "<cmd>RenderMarkdown expand<cr>", { desc = "Expand Markdown Headings" })
+map("n", "<leader>mc", "<cmd>RenderMarkdown contract<cr>", { desc = "Contract Markdown Headings" })
